@@ -1,0 +1,11 @@
+Giải thích:
+
+cypress/: Thư mục chứa các file cấu hình và code cho Cypress.
+fixtures/: Thư mục chứa dữ liệu tĩnh để sử dụng trong các test case.
+integration/: Thư mục chứa các file test case (spec).
+plugins/: Thư mục chứa các plugin Cypress tùy chỉnh.
+support/: Thư mục chứa các file hỗ trợ cho Cypress, ví dụ như file chứa các command custom.
+cypress.json: File cấu hình Cypress.
+node_modules/: Thư mục chứa các thư viện Node.js được sử dụng bởi dự án.
+package-lock.json: File quản lý các phiên bản thư viện Node.js được sử dụng bởi dự án.
+package.json: File cấu hình dự án Node.js, bao gồm thông tin về tên dự án, phiên bản, các thư viện phụ thuộc, v.v.
