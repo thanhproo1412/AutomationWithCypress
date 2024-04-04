@@ -1,4 +1,4 @@
-import HomePage from '../support/pageObjects/homePage';
+import HomePage from './../pages/homePage';
 
 describe('Home Page', () => {
   it('should log in after clicking the login button', () => {
