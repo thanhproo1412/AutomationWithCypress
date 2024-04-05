@@ -1,4 +1,4 @@
-import PracticeFormPage from "./practiceFormPage";
+import PracticeFormPage from './practiceForm'; // Import the page object
 
 describe("Practice Form Page", () => {
   it("should fill out the practice form", () => {
