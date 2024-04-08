@@ -9,9 +9,8 @@ describe('Basic Auth', () => {
   it('should login successfully with valid credentials', () => {
 
     // Nav to home page
-    visit() {
-      cy.visit('https://the-internet.herokuapp.com/');
-    }
+    cy.visit('https://the-internet.herokuapp.com/');
+    
     // Nav to login page
     const homePage = new HomePage();
     homePage.getLoginBtn().click()

@@ -9,12 +9,7 @@ class ABTestingPage {
     return cy.get('div[id="content"] p');
   }
 
-  verifyContent(title, content) {
-    cy.log(title)
 
-    this.getTitle().should('have.text', title);
-    this.getContent().should('have.text', content);
-  }
 
 }
 
