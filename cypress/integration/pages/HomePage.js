@@ -1,8 +1,5 @@
 class HomePage {
 
-  visit() {
-    cy.visit('https://the-internet.herokuapp.com/');
-  }
 
   //Basic Auth btn
   getLoginBtn() {
@@ -13,7 +10,6 @@ class HomePage {
   getABTestingBtn() {
     return cy.get('div[id="content"] a:contains("A/B Testing")');
   }
-
 
 }
 
