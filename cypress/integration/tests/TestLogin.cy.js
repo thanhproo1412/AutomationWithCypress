@@ -8,17 +8,16 @@ describe('Basic Auth', () => {
   it('should login successfully with valid credentials', () => {
 
     // Nav to home page
-    const homePage = new HomePage(); // Instantiate the LoginPage object
+    const homePage = new HomePage();
     homePage.visit()
 
     // Nav to login page
     homePage.getLoginBtn().click()
 
-    const loginPage = new LoginPage(); // Instantiate the LoginPage object
-    // Assuming username and password are 'admin' (check website documentation)
-    loginPage.login(loginData.username, loginData.password); // Use login method from LoginPage
+    const loginPage = new LoginPage(); 
+    loginPage.login(loginData.username, loginData.password); 
 
-    // Assert successful login (replace with appropriate assertion based on page content)
+    // ...
     cy.get('@title').should('have.text', ExpectedData.title);
     cy.get('@content').should('have.text', ExpectedData.content);
   });

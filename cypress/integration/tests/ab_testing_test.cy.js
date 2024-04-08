@@ -1,13 +1,22 @@
 import ABTestingPage from '../pages/ABTestingPage'; // Import the ABTestingPage object
+import HomePage from '../pages/HomePage';
+import testData from '../../testData/ABTesting.json'; // Assuming login.json is in testData folder
 
 describe('A/B Testing', () => {
   it('should load a version of the A/B Testing page', () => {
-    cy.visit('https://the-internet.herokuapp.com/abtest'); // Replace with actual URL
+    // Nav to home page
+    const homePage = new HomePage(); // Instantiate the LoginPage object
+    homePage.visit()
+
+    //nav to ABPage
+    homePage.getABTestingBtn().click()
+
     const abTestingPage = new ABTestingPage();
 
-    abTestingPage.verifyVersionALoaded(); // Call the specific verification method
+    //verify data
+    cy.log(testData.title)
+    abTestingPage.verifyContent(testData.title, testData.content);
 
-    // If you have a version B element and verification method, uncomment and use here
-    // abTestingPage.verifyVersionBLoaded();
+
   });
 });

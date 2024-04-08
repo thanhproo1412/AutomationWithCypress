@@ -9,3 +9,9 @@ cypress.json: File cấu hình Cypress.
 node_modules/: Thư mục chứa các thư viện Node.js được sử dụng bởi dự án.
 package-lock.json: File quản lý các phiên bản thư viện Node.js được sử dụng bởi dự án.
 package.json: File cấu hình dự án Node.js, bao gồm thông tin về tên dự án, phiên bản, các thư viện phụ thuộc, v.v.
+
+1. Install: npm i
+2. Run: npx cypress open
+3. Select e2e testing
+4. Start test with chrome
+5. In Specs, select testcase to run it

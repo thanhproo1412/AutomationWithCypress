@@ -1,17 +1,21 @@
 class ABTestingPage {
-  constructor() {
-    this.heading = cy.get('h3'); // Assuming there's an h3 heading
-    this.versionAElement = cy.get('.version-a-element'); // Example for version A element
-    // this.versionBElement = cy.get('.version-b-element'); // Example for version B element (add more as needed)
+
+  //Basic Auth
+  getTitle() {
+    return cy.get('div[id="content"] h3');
   }
 
-  verifyVersionALoaded() {
-    this.heading.should('be.visible');
-    this.versionAElement.should('be.visible');
-    // Add assertions for other version A elements
+  getContent() {
+    return cy.get('div[id="content"] p');
   }
 
-  // Add a verifyVersionBLoaded() method if needed based on page structure
+  verifyContent(title, content) {
+    cy.log(title)
+
+    this.getTitle().should('have.text', title);
+    this.getContent().should('have.text', content);
+  }
+
 }
 
 export default ABTestingPage;
