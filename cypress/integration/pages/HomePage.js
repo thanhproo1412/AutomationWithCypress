@@ -11,6 +11,12 @@ class HomePage {
     return cy.get('div[id="content"] a:contains("A/B Testing")');
   }
 
+  // Add/Remove Elements
+  getAddRemoveElementsBtn() {
+    return cy.get('div[id="content"] a:contains("Add/Remove Elements")');
+  }
+
+
 }
 
 export default HomePage;
