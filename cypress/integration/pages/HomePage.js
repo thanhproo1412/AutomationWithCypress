@@ -11,11 +11,15 @@ class HomePage {
     return cy.get('div[id="content"] a:contains("A/B Testing")');
   }
 
-  // Add/Remove Elements
+  // Add/Remove Elements btn
   getAddRemoveElementsBtn() {
     return cy.get('div[id="content"] a:contains("Add/Remove Elements")');
   }
 
+  //WYSIWYG Editor btn
+  getWYSIWYGEditorBtn() {
+    return cy.get('div[id="content"] a:contains("WYSIWYG Editor")');
+  }
 
 }
 

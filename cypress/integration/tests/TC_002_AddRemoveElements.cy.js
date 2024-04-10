@@ -1,7 +1,7 @@
 import AddRemoveElementsAction from '../actions/AddRemoveElementsAction';
 import HomePage from '../pages/HomePage';
 
-describe('A/B Testing', () => {
+describe('TC_002_AddRemoveElements', () => {
   it('should load a version of the A/B Testing page', () => {
 
     // Nav to home page
