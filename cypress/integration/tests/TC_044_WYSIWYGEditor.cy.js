@@ -8,13 +8,11 @@ describe('TC_044_WYSIWYGEditor', () => {
     cy.visit('https://the-internet.herokuapp.com/');
 
     // Nav to WYSIWYGEditorAction page
-    const homePage = new HomePage();
-    homePage.getWYSIWYGEditorBtn().click()
+    HomePage.getWYSIWYGEditorBtn().click()
 
-    const wYSIWYGEditorAction = new WYSIWYGEditorAction()
 
     //call action
-    wYSIWYGEditorAction.VerifyTitle();
+    WYSIWYGEditorAction.VerifyTitle();
 
   });
 });

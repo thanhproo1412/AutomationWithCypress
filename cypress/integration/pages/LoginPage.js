@@ -1,23 +1,23 @@
 class LoginPage {
 
   //Basic Auth
-  getUsernameInput() {
+  static getUsernameInput() {
     return cy.get(`#username`);
   }
 
-  getPasswordInput() {
+  static getPasswordInput() {
     return cy.get(`#username`);
   }
 
-  getLoginButton() {
+  static getLoginButton() {
     return cy.get(`#username`);
   }
 
-  getTitle() {
+  static getTitle() {
     return cy.get(`//*[@id="content"]/div/h3')`);
   }
 
-  getContent() {
+  static getContent() {
     return cy.get(`//*[@id="content"]/div/p`);
   }
 

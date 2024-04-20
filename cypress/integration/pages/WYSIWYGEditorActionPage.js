@@ -1,11 +1,11 @@
 class ABTestingPage {
 
   //Basic Auth
-  getTitle() {
+  static getTitle() {
     return cy.get('div[class="example"] h3');
   }
 
-  getIframe() {}
+  static getIframe() {}
 
 
 

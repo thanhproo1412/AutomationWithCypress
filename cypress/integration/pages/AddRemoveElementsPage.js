@@ -1,11 +1,11 @@
 class AddRemoveElementsPage {
 
   //btn add element
-  getBtnAddElement() {
+  static getBtnAddElement() {
     return cy.get('div[id="content"] button[onclick="addElement()"]');
   }
 
-  getBtnDeleteElement() {
+  static getBtnDeleteElement() {
     return cy.get('div[id="content"] button[onclick="deleteElement()"]');
   }
 

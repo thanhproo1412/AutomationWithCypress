@@ -1,6 +1,5 @@
-class ABTestingPage {
+class BrokenImagesPage {
 
-  //Basic Auth
   static getTitle() {
     return cy.get('div[id="content"] h3');
   }
@@ -13,4 +12,4 @@ class ABTestingPage {
 
 }
 
-export default ABTestingPage;
+export default BrokenImagesPage;

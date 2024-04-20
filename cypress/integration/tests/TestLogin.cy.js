@@ -10,18 +10,15 @@ describe('Basic Auth', () => {
 
     // Nav to home page
     cy.visit('https://the-internet.herokuapp.com/');
-    
+
     // Nav to login page
-    const homePage = new HomePage();
-    homePage.getLoginBtn().click()
+    HomePage.getLoginBtn().click()
 
     //login
-    const loginAction = new LoginAction()
-    loginAction.login(loginData.username, loginData.password)
+    LoginAction.login(loginData.username, loginData.password)
 
-    const loginPage = new LoginPage();
-    loginPage.getTitle().should('have.text', ExpectedData.title)
-    loginPage.getContent().should('have.text', ExpectedData.content)
+    LoginPage.getTitle().should('have.text', ExpectedData.title)
+    LoginPage.getContent().should('have.text', ExpectedData.content)
 
 
   });

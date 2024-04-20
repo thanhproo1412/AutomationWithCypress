@@ -1,18 +1,17 @@
 import LoginPage from '../pages/LoginPage.js'
 
-const loginPage = new LoginPage()
 
 class LoginAction {
 
-    login(username, password) {
+    static login(username, password) {
 
-        loginPage.getUsernameInput().type(username);
-        loginPage.getPasswordInput().type(password);
-        loginPage.getLoginButton().click();
+        LoginPage.getUsernameInput().type(username);
+        LoginPage.getPasswordInput().type(password);
+        LoginPage.getLoginButton().click();
 
     }
 
-    forgotPasswordFunc() {
+    static forgotPasswordFunc() {
         //etc
     }
 

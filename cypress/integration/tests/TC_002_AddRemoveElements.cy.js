@@ -8,13 +8,11 @@ describe('TC_002_AddRemoveElements', () => {
     cy.visit('https://the-internet.herokuapp.com/');
 
     // Nav to AddRemoveElementsAction page
-    const homePage = new HomePage();
-    homePage.getAddRemoveElementsBtn().click()
+    HomePage.getAddRemoveElementsBtn().click()
 
-    const addRemoveElementsAction = new AddRemoveElementsAction();
 
     //call action
-    addRemoveElementsAction.AddRemoveElement();
+    AddRemoveElementsAction.AddRemoveElement();
 
   });
 });

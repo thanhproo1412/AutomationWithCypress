@@ -1,221 +1,218 @@
 class HomePage {
 
 
-
-
-  // AB Testing btn
-  getABTestingBtn() {
+  static getABTestingBtn() {
     return cy.get('div[id="content"] a:contains("A/B Testing")');
   }
 
   // Add/Remove Elements btn
-  getAddRemoveElementsBtn() {
+  static getAddRemoveElementsBtn() {
     return cy.get('div[id="content"] a:contains("Add/Remove Elements")');
   }
 
   //Basic Auth btn
-  getBasicAuthBtn() {
+  static getBasicAuthBtn() {
     return cy.get('div[id="content"] a:contains("Basic Auth")');
   }
 
   //Broken Images btn
-  getBrokenImagesBtn() {
+  static getBrokenImagesBtn() {
     return cy.get('div[id="content"] a:contains("Broken Images")');
   }
 
   //Challenging DOM btn
-  getChallengingDOMBtn() {
+  static getChallengingDOMBtn() {
     return cy.get('div[id="content"] a:contains("Challenging DOM")');
   }
 
   //Checkboxes btn
-  getCheckboxesBtn() {
+  static getCheckboxesBtn() {
     return cy.get('div[id="content"] a:contains("Checkboxes")');
   }
 
   //Context Menu btn
-  getContextMenuBtn() {
+  static getContextMenuBtn() {
     return cy.get('div[id="content"] a:contains("Context Menu")');
   }
 
   //Digest Authentication btn
-  getDigestAuthenticationBtn() {
+  static getDigestAuthenticationBtn() {
     return cy.get('div[id="content"] a:contains("Digest Authentication")');
   }
 
   //Disappearing Elements btn
-  getDisappearingElementsBtn() {
+  static getDisappearingElementsBtn() {
     return cy.get('div[id="content"] a:contains("Disappearing Elements")');
   }
 
   //Drag and Drop btn
-  getDragAndDropBtn() {
+  static getDragAndDropBtn() {
     return cy.get('div[id="content"] a:contains("Drag and Drop")');
   }
 
   //Dropdown btn
-  getDropdownBtn() {
+  static getDropdownBtn() {
     return cy.get('div[id="content"] a:contains("Dropdown")');
   }
 
   //Dynamic Content btn
-  getDynamicContentBtn() {
+  static getDynamicContentBtn() {
     return cy.get('div[id="content"] a:contains("Dynamic Content")');
   }
 
   //Entry Adbtn
-  getEntryAdBtn() {
+  static getEntryAdBtn() {
     return cy.get('div[id="content"] a:contains("Entry Ad")');
   }
 
   //Exit Intentbtn
-  getExitIntentBtn() {
+  static getExitIntentBtn() {
     return cy.get('div[id="content"] a:contains("Exit Intent")');
   }
 
   //File Download btn
-  getFileDownloadBtn() {
+  static getFileDownloadBtn() {
     return cy.get('div[id="content"] a:contains("File Download")');
   }
 
   //File Uploadbtn
-  getFileUploadBtn() {
+  static getFileUploadBtn() {
     return cy.get('div[id="content"] a:contains("File Upload")');
   }
 
   //Floating Menubtn
-  getFloatingMenuBtn() {
+  static getFloatingMenuBtn() {
     return cy.get('div[id="content"] a:contains("Floating Menu")');
   }
 
   //Forgot Passwordbtn
-  getForgotPasswordBtn() {
+  static getForgotPasswordBtn() {
     return cy.get('div[id="content"] a:contains("Forgot Password")');
   }
 
   //Form Authenticationbtn
-  getFormAuthenticationBtn() {
+  static getFormAuthenticationBtn() {
     return cy.get('div[id="content"] a:contains("Form Authentication")');
   }
 
   //Framesbtn
-  getFramesBtn() {
+  static getFramesBtn() {
     return cy.get('div[id="content"] a:contains("Frames")');
   }
 
   //Geolocationbtn
-  getGeolocationBtn() {
+  static getGeolocationBtn() {
     return cy.get('div[id="content"] a:contains("Geolocation")');
   }
 
   //Horizontal Sliderbtn
-  getHorizontal SliderBtn() {
+  static getHorizontalSliderBtn() {
     return cy.get('div[id="content"] a:contains("Horizontal Slider")');
   }
 
   //Hoversbtn
-  getHoversBtn() {
+  static getHoversBtn() {
     return cy.get('div[id="content"] a:contains("Hovers")');
   }
 
   //Infinite Scrollbtn
-  getInfinite ScrollBtn() {
+  static getInfiniteScrollBtn() {
     return cy.get('div[id="content"] a:contains("Infinite Scroll")');
   }
 
   //Inputsbtn
-  getInputsBtn() {
+  static getInputsBtn() {
     return cy.get('div[id="content"] a:contains("Inputs")');
   }
 
   //JQuery UI Menus btn
-  getJQueryUIMenusBtn() {
+  static getJQueryUIMenusBtn() {
     return cy.get('div[id="content"] a:contains("JQuery UI Menus")');
   }
 
   //JavaScript Alerts btn
-  getJavaScriptAlertsBtn() {
+  static getJavaScriptAlertsBtn() {
     return cy.get('div[id="content"] a:contains("JavaScript Alerts")');
   }
 
   //JavaScript onload event errorbtn
-  getJavaScriptOnLoadEventerrorBtn() {
+  static getJavaScriptOnLoadEventerrorBtn() {
     return cy.get('div[id="content"] a:contains("JavaScript onload event error")');
   }
 
   //Key Presses btn
-  getKeyPressesBtn() {
+  static getKeyPressesBtn() {
     return cy.get('div[id="content"] a:contains("Key Presses")');
   }
 
   //Large & Deep DOM btn
-  getLargeDeepDOMBtn() {
+  static getLargeDeepDOMBtn() {
     return cy.get('div[id="content"] a:contains("Large & Deep DOM")');
   }
 
   //Multiple Windows btn
-  getMultipleWindowsBtn() {
+  static getMultipleWindowsBtn() {
     return cy.get('div[id="content"] a:contains("Multiple Windows")');
   }
 
   //Nested Framesbtn
-  getNestedFramesBtn() {
+  static getNestedFramesBtn() {
     return cy.get('div[id="content"] a:contains("Nested Frames")');
   }
 
   //Notification Messages
-  getNotificationMessagesBtn() {
+  static getNotificationMessagesBtn() {
     return cy.get('div[id="content"] a:contains("Notification Messages")');
   }
 
   //Redirect Link
-  getRedirectLinkBtn() {
+  static getRedirectLinkBtn() {
     return cy.get('div[id="content"] a:contains("Redirect Link")');
   }
 
   //Secure File Download
-  getSecureFileDownloadBtn() {
+  static getSecureFileDownloadBtn() {
     return cy.get('div[id="content"] a:contains("Secure File Download")');
   }
 
   //Shadow DOM
-  getShadowDOMBtn() {
+  static getShadowDOMBtn() {
     return cy.get('div[id="content"] a:contains("Shadow DOM")');
   }
 
   //Shifting Content
-  getShiftingContentBtn() {
+  static getShiftingContentBtn() {
     return cy.get('div[id="content"] a:contains("Shifting Content")');
   }
 
   //Slow Resources btn
-  getSlowResourcesBtn() {
+  static getSlowResourcesBtn() {
     return cy.get('div[id="content"] a:contains("Slow Resources")');
   }
 
   //Sortable Data Tables btn
-  getSortableDataTablesBtn() {
+  static getSortableDataTablesBtn() {
     return cy.get('div[id="content"] a:contains("Sortable Data Tables")');
   }
 
   //Status Codes btn
-  getStatusCodesBtn() {
+  static getStatusCodesBtn() {
     return cy.get('div[id="content"] a:contains("Status Codes")');
   }
 
   //Typos btn
-  getTyposBtn() {
+  static getTyposBtn() {
     return cy.get('div[id="content"] a:contains("Typos")');
   }
 
   //WYSIWYG Editor btn
-  getWYSIWYGEditorBtn() {
+  static getWYSIWYGEditorBtn() {
     return cy.get('div[id="content"] a:contains("WYSIWYG")');
   }
 
 
   //WYSIWYG Editor btn
-  getWYSIWYGEditorBtn() {
+  static getWYSIWYGEditorBtn() {
     return cy.get('div[id="content"] a:contains("WYSIWYG Editor")');
   }
 

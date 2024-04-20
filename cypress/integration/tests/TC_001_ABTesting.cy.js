@@ -10,13 +10,11 @@ describe('A/B Testing', () => {
     cy.visit('https://the-internet.herokuapp.com/');
 
     // Nav to AB Testing page
-    const homePage = new HomePage();
-    homePage.getABTestingBtn().click()
+    HomePage.getABTestingBtn().click()
 
-    const aBTestingAction = new ABTestingAction();
 
     //verify data
-    aBTestingAction.verifyContent(testData.title, testData.content);
+    ABTestingAction.verifyContent(testData.title, testData.content);
 
 
   });
