@@ -14,7 +14,7 @@ describe('Broken Image Test', () => {
 
 
     //verify data
-    BrokenImagesAction.verifyContent(testData.title, testData.content);
+    BrokenImagesAction.verifyBrokenImage();
 
 
   });
