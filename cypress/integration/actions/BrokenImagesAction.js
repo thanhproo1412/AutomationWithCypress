@@ -23,11 +23,12 @@ class BrokenImagesAction {
                     // Expect status code to be 200 (successful)
                     expect(response.status).to.equal(200);
                 })
-                .catch((error) => {
+                .then(null, (error) => {
                     // Log error message for debugging
                     console.error('Broken image:', imageUrl, error);
                     // Add a custom assertion to fail the test for broken images
                     expect(false, `Image '${imageUrl}' failed to load`).to.equal(true); // Example assertion
+
                 });
         });
 

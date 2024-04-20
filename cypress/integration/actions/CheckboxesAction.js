@@ -6,6 +6,7 @@ class CheckboxesAction {
     static checkTheBox() {
         CheckboxesPage.getCheckBox1().check()
         CheckboxesPage.getCheckBox2().check()
+        CheckboxesPage.getCheckBox2().should('be.checked');
 
         cy.wait(4000)
 
